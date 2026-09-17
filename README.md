@@ -4,11 +4,11 @@
 <!--                  AURORA CELESTIAL HEADER BANNER              -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0D1117,20:240046,45:5A189A,75:9D4EDD,100:00F5D4&height=250&section=header&text=%E2%9C%A7%20Nikita%20Kumari%20%E2%9C%A7&fontSize=46&fontAlignY=36&animation=twinkling&fontColor=ffffff&desc=Python%20Developer%20%E2%80%A2%20Data%20Enthusiast%20%E2%80%A2%20Problem%20Solver&descAlignY=58&descAlign=50&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0D1117,20:240046,45:5A189A,75:9D4EDD,100:00F5D4&height=250&section=header&text=%E2%9C%A7%20Nikita%20Kumari%20%E2%9C%A7&fontSize=46&fontAlignY=36&animation=twinkling&fontColor=ffffff&desc=Python%20Developer%20%E2%80%A2%20Tech%20Enthusiast%20%E2%80%A2%20Problem%20Solver&descAlignY=58&descAlign=50&descSize=18" width="100%"/>
 
 <!-- ═══════════════════ GLOWING TYPING SVG ═══════════════════ -->
 <a href="https://github.com/nikkita18">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=1000&color=00F5D4&background=1E1E2E00&center=true&vCenter=true&multiline=false&width=620&height=50&lines=%E2%9C%A8+Crafting+intelligent+data-driven+solutions;%F0%9F%90%8D+Python+%2B+Flask+%2B+Data+Analytics;%F0%9F%9A%80+Turning+ideas+into+meaningful+insights;%E2%98%95+Fueled+by+curiosity%2C+clean+code+%26+coffee" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=1000&color=00F5D4&background=1E1E2E00&center=true&vCenter=true&multiline=false&width=620&height=50&lines=%E2%9C%A8+Where+Creativity+Meets+Code;%F0%9F%90%8D+Python+%2B+Flask+%2B+Data+Analytics;%F0%9F%9A%80+Turning+ideas+into+interactive+experience;%E2%98%95+Fueled+by+curiosity%2C+clean+code+%26+coffee" alt="Typing SVG" />
 </a>
 
 <!-- ═══════════════════ QUICK BADGES & VIEWS ═══════════════════ -->
@@ -37,11 +37,11 @@ from typing import List
 @dataclass
 class NikitaKumari:
     """
-    Python Developer & Data Analyst passionate about building
-    functional web apps, extracting insights & writing elegant code.
+    Computer Science student passionate about Python, web development,
+    creative design & turning ideas into functional projects.
     """
     name: str = "Nikita Kumari"
-    role: str = "Python Developer & Data Explorer 🐍"
+    role: str = "Python Developer | Web Designer"
     location: str = "India 🇮🇳"
     
     focus_areas: List[str] = field(default_factory=lambda: [
@@ -51,7 +51,7 @@ class NikitaKumari:
     ])
     
     def status(self) -> str:
-        return "Building impactful projects & analyzing data 🚀"
+        return "Building impactful projects & learning along the way 🚀"
 
     def get_fuel(self) -> List[str]:
         return ["Coffee ☕", "Python 🐍", "Lo-Fi Beats 🎧"]
