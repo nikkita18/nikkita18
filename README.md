@@ -113,16 +113,14 @@ class NikitaKumari:
 <!--                     GITHUB STATS & STREAK                       -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-## 📊 Analytics & Activity
-
+##  📊 Analytics & Activity
+<!-- Reliable Demolab Streak Stats (Never rate-limited) -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nikkita18&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5D4&text_color=9D4EDD&icon_color=00F5D4&count_private=true&include_all_commits=true" width="48%" alt="GitHub Stats" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikkita18&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5D4&text_color=9D4EDD&langs_count=6" width="48%" alt="Top Languages" />
+  <img src="https://streak-stats.demolab.com/?user=nikkita18&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5D4&fire=9D4EDD&currStreakLabel=00F5D4&currStreakNum=FFFFFF" width="80%" alt="GitHub Streak Stats" />
 </p>
-
+<!-- Trophies & Achievements (100% Reliable) -->
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nikkita18&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5D4&fire=9D4EDD&currStreakLabel=00F5D4&currStreakNum=FFFFFF" width="98%" alt="Streak Stats" />
+  <img src="https://github-profile-trophy.vercel.app/?username=nikkita18&theme=nord&no-frame=true&no-bg=true&margin_w=10&margin_h=10&row=1&column=7" width="90%" alt="GitHub Trophies" />
 </p>
 
 ---
