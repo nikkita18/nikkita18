@@ -118,10 +118,6 @@ class NikitaKumari:
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=nikkita18&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5D4&fire=9D4EDD&currStreakLabel=00F5D4&currStreakNum=FFFFFF" width="80%" alt="GitHub Streak Stats" />
 </p>
-<!-- Trophies & Achievements (100% Reliable) -->
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nikkita18&theme=nord&no-frame=true&no-bg=true&margin_w=10&margin_h=10&row=1&column=7" width="90%" alt="GitHub Trophies" />
-</p>
 
 ---
 
