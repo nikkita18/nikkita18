@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <!-- Aurora gradient background -->
+    <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="25%" stop-color="#161B22"/>
+      <stop offset="50%" stop-color="#1A1040"/>
+      <stop offset="75%" stop-color="#2D1B69"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+
+    <!-- Animated aurora glow -->
+    <radialGradient id="glow1" cx="30%" cy="60%" r="40%">
+      <stop offset="0%" stop-color="#7B2FBE" stop-opacity="0.4">
+        <animate attributeName="stop-opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="70%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#00F5D4" stop-opacity="0.3">
+        <animate attributeName="stop-opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="30%">
+      <stop offset="0%" stop-color="#F72585" stop-opacity="0.2">
+        <animate attributeName="stop-opacity" values="0.2;0.5;0.2" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+
+    <!-- Sparkle filter -->
+    <filter id="softglow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textglow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1200" height="300" fill="url(#aurora)"/>
+
+  <!-- Aurora glow layers -->
+  <rect width="1200" height="300" fill="url(#glow1)"/>
+  <rect width="1200" height="300" fill="url(#glow2)"/>
+  <rect width="1200" height="300" fill="url(#glow3)"/>
+
+  <!-- Floating stars / particles -->
+  <!-- Layer 1: Slow drift -->
+  <circle cx="100" cy="50" r="1.5" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="50;45;50" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="90" r="1" fill="#00F5D4" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="90;82;90" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="35" r="2" fill="#ffffff" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="35;28;35" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="550" cy="70" r="1.2" fill="#F72585" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.15;0.7" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="45" r="1.8" fill="#ffffff" opacity="0.85">
+    <animate attributeName="opacity" values="0.85;0.2;0.85" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="45;38;45" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="850" cy="80" r="1" fill="#9D4EDD" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="950" cy="55" r="1.5" fill="#00F5D4" opacity="0.75">
+    <animate attributeName="opacity" values="0.75;0.2;0.75" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="55;48;55" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="40" r="1.3" fill="#ffffff" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.15;0.7" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="180" cy="200" r="1" fill="#ffffff" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="250" r="1.5" fill="#9D4EDD" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="230" r="1.2" fill="#00F5D4" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="210" r="1" fill="#ffffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.15;0.6" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="260" r="1.8" fill="#F72585" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.08;0.3" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="220" r="1" fill="#ffffff" opacity="0.45">
+    <animate attributeName="opacity" values="0.45;0.1;0.45" dur="3.7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Sparkle crosses -->
+  <g filter="url(#softglow)">
+    <!-- Sparkle 1 -->
+    <g opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+      <line x1="150" y1="120" x2="150" y2="130" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="145" y1="125" x2="155" y2="125" stroke="#ffffff" stroke-width="1.5"/>
+    </g>
+    <!-- Sparkle 2 -->
+    <g opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3s" repeatCount="indefinite" begin="1s"/>
+      <line x1="1050" y1="100" x2="1050" y2="112" stroke="#00F5D4" stroke-width="1.5"/>
+      <line x1="1044" y1="106" x2="1056" y2="106" stroke="#00F5D4" stroke-width="1.5"/>
+    </g>
+    <!-- Sparkle 3 -->
+    <g opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.15;0.7" dur="2.5s" repeatCount="indefinite" begin="0.5s"/>
+      <line x1="900" y1="180" x2="900" y2="190" stroke="#F72585" stroke-width="1.2"/>
+      <line x1="895" y1="185" x2="905" y2="185" stroke="#F72585" stroke-width="1.2"/>
+    </g>
+    <!-- Sparkle 4 -->
+    <g opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.5s" repeatCount="indefinite" begin="1.5s"/>
+      <line x1="300" y1="180" x2="300" y2="192" stroke="#9D4EDD" stroke-width="1.5"/>
+      <line x1="294" y1="186" x2="306" y2="186" stroke="#9D4EDD" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Main title text with glow -->
+  <text x="600" y="120" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" fill="#ffffff" filter="url(#textglow)">
+    Nikita Kumari
+  </text>
+
+  <!-- Decorative diamond symbols around name -->
+  <text x="365" y="120" text-anchor="middle" font-family="Arial" font-size="24" fill="#00F5D4" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" repeatCount="indefinite"/>
+    ✦
+  </text>
+  <text x="835" y="120" text-anchor="middle" font-family="Arial" font-size="24" fill="#00F5D4" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" repeatCount="indefinite"/>
+    ✦
+  </text>
+
+  <!-- Subtitle line -->
+  <line x1="380" y1="148" x2="820" y2="148" stroke="url(#subtitleLine)" stroke-width="1" opacity="0.3"/>
+  <linearGradient id="subtitleLine" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="transparent"/>
+    <stop offset="20%" stop-color="#9D4EDD"/>
+    <stop offset="50%" stop-color="#00F5D4"/>
+    <stop offset="80%" stop-color="#F72585"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </linearGradient>
+
+  <!-- Subtitle text -->
+  <text x="600" y="175" text-anchor="middle" font-family="'Fira Code', 'Courier New', monospace" font-size="17" fill="#B0B0C0" letter-spacing="3">
+    Python Developer  •  Data Enthusiast  •  Problem Solver
+  </text>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="215" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#7B8794" font-style="italic" letter-spacing="1">
+    "Where creativity meets code"
+  </text>
+
+  <!-- Bottom decorative wave -->
+  <path d="M0,280 C200,260 400,295 600,275 C800,255 1000,290 1200,270 L1200,300 L0,300 Z" fill="#0D1117" opacity="0.5"/>
+  <path d="M0,290 C200,275 400,300 600,285 C800,270 1000,295 1200,280 L1200,300 L0,300 Z" fill="#0D1117" opacity="0.8"/>
+</svg>
