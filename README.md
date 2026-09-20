@@ -1,10 +1,10 @@
 <div align="center">
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                  AURORA CELESTIAL HEADER BANNER              -->
+<!--          CUSTOM ANIMATED AURORA HEADER (Unique SVG)             -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0D1117,20:240046,45:5A189A,75:9D4EDD,100:00F5D4&height=250&section=header&text=%E2%9C%A7%20Nikita%20Kumari%20%E2%9C%A7&fontSize=46&fontAlignY=36&animation=twinkling&fontColor=ffffff&desc=Python%20Developer%20%E2%80%A2%20Tech%20Enthusiast%20%E2%80%A2%20Problem%20Solver&descAlignY=58&descAlign=50&descSize=18" width="100%"/>
+<img src="https://raw.githubusercontent.com/nikkita18/nikkita18/main/header.svg" width="100%" alt="Nikita Kumari — Python Developer • Tech Enthusiast • Problem Solver"/>
 
 <!-- ═══════════════════ GLOWING TYPING SVG ═══════════════════ -->
 <a href="https://github.com/nikkita18">
@@ -113,7 +113,8 @@ class NikitaKumari:
 <!--                     GITHUB STATS & STREAK                       -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-##  📊 Analytics & Activity
+## 📊 Analytics & Activity
+
 <!-- Reliable Demolab Streak Stats (Never rate-limited) -->
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=nikkita18&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5D4&fire=9D4EDD&currStreakLabel=00F5D4&currStreakNum=FFFFFF" width="80%" alt="GitHub Streak Stats" />
@@ -148,7 +149,8 @@ class NikitaKumari:
   </a>
 </p>
 
-<!-- Animated wave footer -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=100:0D1117,75:240046,45:5A189A,20:9D4EDD,0:00F5D4&height=120&section=footer" width="100%"/>
+<!-- Custom Animated Aurora Footer (Unique SVG) -->
+<img src="https://raw.githubusercontent.com/nikkita18/nikkita18/main/footer.svg" width="100%" alt="Footer"/>
 
 </div>
+
