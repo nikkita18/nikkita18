@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140">
+  <defs>
+    <linearGradient id="footerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="20%" stop-color="#1A1040"/>
+      <stop offset="40%" stop-color="#2D1B69"/>
+      <stop offset="60%" stop-color="#1A1040"/>
+      <stop offset="80%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#1A1040"/>
+      <!-- Animate the gradient shift -->
+      <animate attributeName="x1" values="0%;-50%;0%" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;150%;100%" dur="10s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="15%" stop-color="#9D4EDD" stop-opacity="0.6"/>
+      <stop offset="35%" stop-color="#00F5D4" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#F72585" stop-opacity="0.6"/>
+      <stop offset="65%" stop-color="#00F5D4" stop-opacity="0.8"/>
+      <stop offset="85%" stop-color="#9D4EDD" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+
+    <radialGradient id="footerGlow1" cx="30%" cy="50%" r="30%">
+      <stop offset="0%" stop-color="#7B2FBE" stop-opacity="0.25">
+        <animate attributeName="stop-opacity" values="0.25;0.45;0.25" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="footerGlow2" cx="70%" cy="50%" r="25%">
+      <stop offset="0%" stop-color="#00F5D4" stop-opacity="0.2">
+        <animate attributeName="stop-opacity" values="0.2;0.4;0.2" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+
+    <filter id="fglow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Top organic wave transition -->
+  <path d="M0,0 C100,25 250,8 400,20 C550,32 650,5 800,15 C950,25 1100,10 1200,0 L1200,140 L0,140 Z" fill="url(#footerGrad)"/>
+
+  <!-- Glow overlays -->
+  <rect width="1200" height="140" fill="url(#footerGlow1)"/>
+  <rect width="1200" height="140" fill="url(#footerGlow2)"/>
+
+  <!-- Decorative gradient line -->
+  <line x1="150" y1="45" x2="1050" y2="45" stroke="url(#lineGrad)" stroke-width="1"/>
+
+  <!-- Twinkling stars in footer -->
+  <circle cx="80" cy="70" r="1" fill="#ffffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="90" r="0.8" fill="#00F5D4" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="75" r="1.2" fill="#ffffff" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.15;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="550" cy="85" r="0.8" fill="#9D4EDD" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="70" r="1" fill="#F72585" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="900" cy="95" r="0.8" fill="#ffffff" opacity="0.55">
+    <animate attributeName="opacity" values="0.55;0.1;0.55" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="80" r="1" fill="#00F5D4" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Sparkle crosses -->
+  <g filter="url(#fglow)">
+    <g opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.15;0.6" dur="2.5s" repeatCount="indefinite"/>
+      <line x1="450" y1="72" x2="450" y2="82" stroke="#00F5D4" stroke-width="1.2"/>
+      <line x1="445" y1="77" x2="455" y2="77" stroke="#00F5D4" stroke-width="1.2"/>
+    </g>
+    <g opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite" begin="1s"/>
+      <line x1="650" y1="65" x2="650" y2="73" stroke="#9D4EDD" stroke-width="1"/>
+      <line x1="646" y1="69" x2="654" y2="69" stroke="#9D4EDD" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Footer text -->
+  <text x="600" y="77" text-anchor="middle" font-family="'Fira Code', 'Courier New', monospace" font-size="12" fill="#7B8794" letter-spacing="2">
+    Designed with 💜 by Nikita Kumari
+  </text>
+
+  <!-- Heart icon pulse -->
+  <text x="600" y="107" text-anchor="middle" font-family="Arial" font-size="14" fill="#F72585" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite"/>
+    ✦  ·  ✦  ·  ✦
+  </text>
+</svg>
